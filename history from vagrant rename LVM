@@ -1,0 +1,23 @@
+ustam3@rustam3-HP-ProBook-6460b:~/DZ3/stands-03-lvm$ vagrant ssh
+Last login: Thu Mar  5 11:53:07 2020 from 10.0.2.2
+[vagrant@lvm ~]$ su -
+Password: 
+Last login: Thu Mar  5 11:53:13 UTC 2020 on pts/0
+[root@lvm ~]# history 
+    1  ls
+    2  vgs
+    3  vgrename VolGroupe00 OtusRoot
+    4  vgrename VolGroup00 OtusRoot
+    5  vgs
+    6  cat /etc/fstab 
+    7  sed -i 's/VolGroup00/OtusRoot/g' /etc/fstab 
+    8  cat /etc/fstab 
+    9  sed -i 's/VolGroup00/OtusRoot/g' /etc/default/grab
+   10  sed -i 's/VolGroup00/OtusRoot/g' /etc/default/grub 
+   11  sed -i 's/VolGroup00/OtusRoot/g' /boot/grub2/grub.cfg 
+   12  vgs
+   13  mkinitrd -f -v /boot/initramfs-$(uname -r).img $(uname -r)
+   14  vgs
+   15  exit
+   16  vgs
+
